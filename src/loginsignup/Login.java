@@ -34,9 +34,9 @@ public class Login extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        email = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        password = new javax.swing.JPasswordField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
@@ -123,15 +123,15 @@ public class Login extends javax.swing.JFrame {
         Left.add(jLabel2);
         jLabel2.setBounds(310, 200, 60, 25);
 
-        jTextField1.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField1.setPreferredSize(new java.awt.Dimension(65, 20));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        email.setForeground(new java.awt.Color(102, 102, 102));
+        email.setPreferredSize(new java.awt.Dimension(65, 20));
+        email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                emailActionPerformed(evt);
             }
         });
-        Left.add(jTextField1);
-        jTextField1.setBounds(310, 170, 450, 30);
+        Left.add(email);
+        email.setBounds(310, 170, 450, 30);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
@@ -139,10 +139,10 @@ public class Login extends javax.swing.JFrame {
         Left.add(jLabel3);
         jLabel3.setBounds(310, 140, 60, 25);
 
-        jPasswordField1.setForeground(new java.awt.Color(102, 102, 102));
-        jPasswordField1.setPreferredSize(new java.awt.Dimension(65, 20));
-        Left.add(jPasswordField1);
-        jPasswordField1.setBounds(310, 230, 450, 30);
+        password.setForeground(new java.awt.Color(102, 102, 102));
+        password.setPreferredSize(new java.awt.Dimension(65, 20));
+        Left.add(password);
+        password.setBounds(310, 230, 450, 30);
 
         jButton2.setBackground(new java.awt.Color(16, 76, 145));
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -204,9 +204,9 @@ public class Login extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_emailActionPerformed
 
     /**
      * @param args the command line arguments
@@ -246,6 +246,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Left;
     private javax.swing.JPanel Right;
+    private javax.swing.JTextField email;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
@@ -255,7 +256,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField password;
     // End of variables declaration//GEN-END:variables
 }
